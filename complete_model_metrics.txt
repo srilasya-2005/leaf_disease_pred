@@ -1,0 +1,88 @@
+==================================================
+       PLANT DISEASE MODEL - PERFORMANCE REPORT
+       (With Test Time Augmentation - 5 Rounds)
+==================================================
+
+Model Path:    plant_disease_model_final copy 2.keras
+Test Images:   1950
+TTA Accuracy:  0.809744 (80.97%)
+TTA Loss:      0.494674
+
+--------------------------------------------------
+              CLASSIFICATION REPORT
+--------------------------------------------------
+                            precision    recall  f1-score   support
+
+        healthy maize leaf     0.8901    0.8182    0.8526        99
+         healthy rice leaf     0.8909    0.8750    0.8829       112
+        healthy wheat leaf     0.8938    0.9182    0.9058       110
+    maize common rust leaf     0.8172    0.7238    0.7677       105
+      maize grey leaf spot     0.7568    0.8571    0.8038        98
+maize northern leaf blight     0.8815    0.9297    0.9049       128
+       maize southern rust     0.8551    0.8369    0.8459       141
+rice bacterial blight leaf     0.8038    0.8000    0.8019       210
+rice bacterial leaf streak     0.7941    0.7941    0.7941       136
+   rice blast disease leaf     0.8819    0.8581    0.8699       148
+      rice brown spot leaf     0.7734    0.8115    0.7920       122
+           wheat leaf rust     0.8276    0.6857    0.7500       140
+ wheat powdery mildew leaf     0.6205    0.8175    0.7055       126
+         wheat stripe rust     0.6880    0.6992    0.6935       123
+       wheat tan spot leaf     0.8519    0.7566    0.8014       152
+
+                  accuracy                         0.8097      1950
+                 macro avg     0.8151    0.8121    0.8115      1950
+              weighted avg     0.8151    0.8097    0.8104      1950
+
+
+--------------------------------------------------
+                 CONFUSION MATRIX
+--------------------------------------------------
+Row: True Class, Column: Predicted Class
+Class Indices:
+ 0: healthy maize leaf
+ 1: healthy rice leaf
+ 2: healthy wheat leaf
+ 3: maize common rust leaf
+ 4: maize grey leaf spot
+ 5: maize northern leaf blight
+ 6: maize southern rust
+ 7: rice bacterial blight leaf
+ 8: rice bacterial leaf streak
+ 9: rice blast disease leaf
+ 10: rice brown spot leaf
+ 11: wheat leaf rust
+ 12: wheat powdery mildew leaf
+ 13: wheat stripe rust
+ 14: wheat tan spot leaf
+
+Matrix:
+[[ 81,   8,   5,   1,   2,   2,   0,   0,   0,   0,   0,   0,   0,   0,
+    0],
+ [  6,  98,   7,   0,   0,   0,   0,   1,   0,   0,   0,   0,   0,   0,
+    0],
+ [  3,   4, 101,   0,   0,   0,   0,   0,   0,   0,   0,   1,   0,   1,
+    0],
+ [  0,   0,   0,  76,  10,   6,  13,   0,   0,   0,   0,   0,   0,   0,
+    0],
+ [  1,   0,   0,   4,  84,   5,   4,   0,   0,   0,   0,   0,   0,   0,
+    0],
+ [  0,   0,   0,   1,   5, 119,   3,   0,   0,   0,   0,   0,   0,   0,
+    0],
+ [  0,   0,   0,  10,  10,   3, 118,   0,   0,   0,   0,   0,   0,   0,
+    0],
+ [  0,   0,   0,   0,   0,   0,   0, 168,  21,   7,  14,   0,   0,   0,
+    0],
+ [  0,   0,   0,   0,   0,   0,   0,  17, 108,   3,   8,   0,   0,   0,
+    0],
+ [  0,   0,   0,   0,   0,   0,   0,  13,   1, 127,   7,   0,   0,   0,
+    0],
+ [  0,   0,   0,   0,   0,   0,   0,  10,   6,   7,  99,   0,   0,   0,
+    0],
+ [  0,   0,   0,   1,   0,   0,   0,   0,   0,   0,   0,  96,  19,  19,
+    5],
+ [  0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   6, 103,  10,
+    7],
+ [  0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   7,  22,  86,
+    8],
+ [  0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   6,  22,   9,
+  115]]
